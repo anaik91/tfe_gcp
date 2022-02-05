@@ -24,7 +24,7 @@ install_gcloud() {
     source "$HOME/google-cloud-sdk/path.bash.inc"
 }
 
-# install_gcloud
+install_gcloud
 gcloud version --format=json
 gcloud config list --format=json
 
