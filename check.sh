@@ -45,6 +45,6 @@ echo ${GOOGLE_CREDENTIALS} > /tmp/GOOGLE_CREDENTIALS
 SERVICE_ACCOUNT=$(cat /tmp/GOOGLE_CREDENTIALS | jq -r .client_email)
 gcloud auth activate-service-account $SERVICE_ACCOUNT \
             --key-file=/tmp/GOOGLE_CREDENTIALS --project=$PROJECT_ID
-
+gcloud config set project $PROJECT_ID
 gcloud config list --format=json
 gcloud container images list --format=json
