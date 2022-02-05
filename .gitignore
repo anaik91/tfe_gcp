@@ -1,0 +1,17 @@
+**/.terraform
+**/terraform.tfstate*
+**/.terraform.tfstate.lock.info
+**/.terraform.lock.hcl
+**/__pycache__
+**/.pytest_cache
+**/.test.lock
+.idea
+.vscode
+
+**/__pycache__*
+**/__pycache__/*
+
+**/*.pyc
+/bin
+.idea/
+.DS_Store
