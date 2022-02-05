@@ -13,7 +13,7 @@ resource "null_resource" "script_run" {
   }
 
   provisioner "local-exec" {
-    command = "/bin/bash ${abspath(path.module)}/check.sh"
+    command = "/bin/bash ${abspath(path.module)}/check.sh ${var.project_id}"
   }
 }
 
