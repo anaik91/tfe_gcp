@@ -28,4 +28,8 @@ install_gcloud
 gcloud version --format=json
 gcloud config list --format=json
 
-echo ${GOOGLE_CREDENTIALS}
+echo ${GOOGLE_CREDENTIALS} > /tmp/GOOGLE_CREDENTIALS
+export GOOGLE_APPLICATION_CREDENTIALS=/tmp/GOOGLE_CREDENTIALS
+
+gcloud config list --format=json
+gcloud container images list --format=json
